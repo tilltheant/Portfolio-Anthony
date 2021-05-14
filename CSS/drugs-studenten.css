@@ -209,6 +209,21 @@ main section div p {
     height:auto ;
 }
 
+.process-container > a > picture > img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.process-container > p {
+        padding: 1em;
+        padding-left: 0.2em;
+        font-size: 12pt;
+        width: 50%;
+        height:auto;
+}
+
 
 .button-wrapper {
     display: flex;
@@ -357,6 +372,11 @@ footer > div > div {
         flex-direction: column;
     }
 
+    .process-container > p {
+        width: 100%;
+        height:auto ;
+}
+
     
 
 footer > div {
@@ -468,9 +488,11 @@ footer > div {
     .project-wrapper div:first-child p{
         font-size: 12pt;
     }
-        .project-wrapper div h1{
+
+    .project-wrapper div h1{
             font-size: 20pt;
-            }
+    }
+
 
     footer > div > div > p {
         width: 100%;
