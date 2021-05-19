@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto ', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -27,7 +27,7 @@ header,main{
 
 /*BEGIN NAVIGATOR   */
 body {
-    background-color: #4A3F3F;
+    background-color: #ECECEC;
 }
 
 li{
@@ -49,7 +49,6 @@ li{
     padding: 1rem 1.5rem;
 }
 
-
 .bar {
     display: block;
     width: 25px;
@@ -57,7 +56,7 @@ li{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: #4A3F3F;
 }
 
 .nav-menu {
@@ -73,27 +72,41 @@ li{
 .nav-link{
     font-size: 1rem;
     font-weight: 600;
-    color: #CDCDCD;
+    color: #22161C;
 }
 
 .nav-link:hover{
     color: #ee9228;
+    transition: all .2s ease-out;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: white;
+    color: #4A3F3F;
 }
 .hamburger {
     display: none;
 }
 
 
+/* MAIN */
 
-/* navigation end */
+.image-wrapper {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    
+}
 
-/* Main */
+.image-wrapper > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 .background-circle {
     position: fixed;
@@ -104,8 +117,10 @@ li{
     background: #F4F4F4;
     border-radius: 50%;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.2;
 }
+
+
 
 section {
     margin-left: 10%;
@@ -113,8 +128,27 @@ section {
 }
 
 
+.project-wrapper div h1 {
+    font-weight: 600;
+    font-size: 30pt;
+    padding-bottom: 2%;
+}
+
+.project-wrapper div h2 {
+    font-size: 3em;
+    font-weight: 300;
+    font-size: 20pt;
+}
+
+
+
 .title-box{
-    color: #CDCDCD;
+    color: black;
+    padding-bottom: 10%;
+}
+
+.title-box > p {
+    font-size: 2em;
 }
 
 main section div h1 {
@@ -122,32 +156,9 @@ main section div h1 {
 
 }
 
-main section div p {
-    font-size: 2em;
-}
 
-.icon-wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 3em;
-    justify-content: center;
-}
 
-.icon-wrapper div{
-    width: 50%;
-    height: auto;
-}
 
-.icon-wrapper div img {
-    width: 50%;
-    height: auto;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
 
 .project-wrapper {
@@ -170,109 +181,20 @@ main section div p {
     
 }
 
-.project-wrapper div h1 {
-    font-weight: 600;
-    font-size: 30pt;
-    padding-bottom: 2%;
-}
-
-.project-wrapper div h2 {
-    font-size: 3em;
-    font-weight: 300;
-    font-size: 20pt;
-}
-
-.project-wrapper div  {
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    
-}
-
-
-
-.intro-text {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.project-wrapper div > p {
-    font-size: 12pt;
-}
-
-.intro-text > p {
-    padding: 1em;
-    padding-left: 0.2em;
-    font-size: 12pt;
-    width: 100%;
-    height:auto ;
-}
-
-
-
-.project-wrapper > a > picture > img {
-    border-radius: 15px;
-    width: 100%;
-    height: auto;
-}
-
-.process-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.process-container > div {
-    padding-top: 0.2em;
-}
-
-.process-container > div > p {
-        padding: 1em;
-        padding-left: 0.2em;
-        font-size: 12pt;
-        width: 100%;
-        height:auto;
-}
-
-.process-container > h3 {
-    padding-top: 1em;
-}
-
-
-
-.button-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 5%;
-}
-
-button {
-    padding: 15px;
-	border-radius: 5px;
-	display: inline-block;
-	border: none;
-	transition: all 0.2s ease 0s;
-    font-weight: 600;
-    color: #CDCDCD;
-    background-color: #4A3F3F;
-}
-
-button:hover {
-    color: #4A3F3F;
-    background-color: #CDCDCD;
-}
 
 
 
 
 
 
-/*main */
+/*MAIN */
 
 
 
 
-/* footer start*/
+
+
+
 
 footer {
     background-color: #22161C;
@@ -308,7 +230,10 @@ footer > div > div > h3 {
 
 footer > div > div > p {
     width: 50%;
+
 }
+
+
 
 footer > div > div {
     border-left: solid 3px white;
@@ -344,13 +269,7 @@ footer > div > div {
 }
 
 
-/*Footer end*/
-
-
-
-@media only screen and (min-width: 768px) {
-    
-
+@media only screen and (min-width: 1024px) {
 
 }
 
@@ -359,45 +278,7 @@ footer > div > div {
 
 @media only screen and (max-width: 768px) {
 
-    .background-circle {
-        width: 500px;
-        height: 500px;
-    }
 
-    section {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .project-wrapper div:nth-child(2) > p {
-        width: 100%;
-        height:auto ;
-    }
-
-    .project-wrapper div h1 {
-        font-weight: 600;
-        font-size: 30pt;
-    }
-    
-    .project-wrapper div h2 {
-        font-size: 3em;
-        font-weight: 300;
-        font-size: 20pt;
-    }
-    .project-wrapper div:nth-child(2) {
-        flex-direction: column;
-    }
-
-    .process-container {
-        flex-direction: column;
-    }
-
-    .process-container > div>  p {
-        width: 100%;
-        height:auto ;
-}
-
-    
 
 footer > div {
 display: flex;
@@ -423,10 +304,6 @@ footer > div {
     padding: 0.5em;
 }
 
-.landingpage-container > h1 {
-    padding: 1em;
-}
-
 .nav-menu {
     position: fixed;
     right: -100%;
@@ -437,15 +314,12 @@ footer > div {
     border-radius: 10px;
     text-align: center;
     transition: 0.4s;
-    box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
 .nav-menu.active {
     right: 0;
-    background-color: #22161C;
 }
-
 
 .nav-item {
     margin: 2rem 0;
@@ -473,54 +347,14 @@ footer > div {
 
 @media only screen and (max-width: 425px) {
 
-    .background-circle {
-        width: 500px;
-        height: 500px;
-        top: 4%;
-    }
-
-    .title-box h1 {
-        font-size: 20pt;
-    }
-    .title-box p {
-        font-size: 15pt;
-    }
-
-    .icon-wrapper {
-        padding: 0;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        }
-
-    .project-wrapper {
-        padding: 1em;
-    }    
-
-    .project-wrapper div:first-child {
-        padding-bottom: 0.5em;
-    }
-
-    .project-wrapper div:nth-child(2) p{
-        font-size: 12pt;
-        padding-left: 0.2em;
-    }
-
-    .project-wrapper div:first-child p{
-        font-size: 12pt;
-    }
-
-    .project-wrapper div h1{
-            font-size: 20pt;
-    }
-
-    .process-container > div > p{
-        padding-right: 0;
-    }
 
 
-    footer > div > div > p {
-        width: 100%;
-    }
+footer > div > div > p {
+    width: 100%;
+}
+
+
 
 }
+
 
