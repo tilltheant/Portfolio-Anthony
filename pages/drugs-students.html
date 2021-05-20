@@ -136,7 +136,15 @@
             </a>
 
         <div class="button-wrapper">
-        <button onclick="location.href='https://xd.adobe.com/view/5ad9bc2d-7a7e-4659-ade9-042407a460ad-0f8a/'">Adobe Xd prototype</button>
+        <button id="toadobexd">Adobe Xd prototype</button>
+        <script>
+						let params = `status=no,location=no,toolbar=no,menubar=no,
+						width=900,height=500,left=100,top=100`
+
+            document.getElementById('toadobexd').onclick = () => {
+              window.open('https://xd.adobe.com/view/5ad9bc2d-7a7e-4659-ade9-042407a460ad-0f8a/' ,'adobexd',params);
+          	};
+        </script>
         </div>
     </div>
 
