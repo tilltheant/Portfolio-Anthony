@@ -130,7 +130,7 @@ li {
   height: 15em;
   object-fit: cover;
   border: #22161c 5px solid;
-  padding: 1em;
+  
 }
 
 .landingpage-container > h1 {
@@ -223,7 +223,7 @@ li {
 }
 
 
-.project a:hover img {
+.project a:hover img{
   opacity: 0.5;
   transition: all 0.2s ease-out;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);

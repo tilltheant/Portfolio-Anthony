@@ -274,74 +274,84 @@ button:hover {
 
 /* footer start*/
 
+
 footer {
-    background-color: #22161C;
+    background-color: #22161c;
     color: ivory;
+  
     display: flex;
-    flex-direction: column;
-}
-
-
-footer > a {
-    color: ivory;
-    text-align: center;
-    padding: 1em;
-    font-weight: 300;
-    font-family: 'Roboto condensed', sans-serif;
-
-}
-
-footer p {
-    font-weight: 300;
-    font-family: 'Roboto condensed', sans-serif;
-}
-
-footer > div {
-    display: flex;
-    flex-direction: row;
-    padding-left: 1em;
-}
-
-footer > div > div > h3 {
-    padding: 0 0 1em 0;
-}
-
-footer > div > div > p {
-    width: 50%;
-}
-
-footer > div > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-item {
+     flex: 1 0 300px;
+     flex-direction: column;
+     
     border-left: solid 3px white;
     margin: 1em;
     padding: 1em;
+    
+  }
+  
+  .footer-item-links {
+    display: flex;
     flex-direction: column;
-    width: 50%;
-}
-
-.footer-logo {
+  }
+  
+  .footer-item-links > a {
+    color: white;
+    font-weight: 300;
+    font-family: "Roboto condensed", sans-serif;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+  
+  .footer-item-links > a:hover {
+    color: #ee9228;
+  }
+  
+  .footer-item-about {
+    font-weight: 300;
+    max-width: 28em;
+    font-family: "Roboto condensed", sans-serif;
+  }
+  
+  .footer-item h3 {
+    padding: 0 0 1em 0;
+  }
+  
+  .footer-logo {
+    flex: 1 0 100%; 
     border: none;
     color: white;
     display: flex;
     justify-content: center;
-    margin: 0;
+    
     padding: 2em 0 0 0;
-    }
-
-.footer-contact-links {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-contact-links > a {
-    color: white;
+  }
+  
+  .footer-logo img {
+    width: 100%;
+    max-width: 160px;
+  }
+  
+  .copyright {
+    padding: 1em;
+  
+    color: ivory;
+    text-align: center;
+  
     font-weight: 300;
-    font-family: 'Roboto condensed', sans-serif;
-    padding:  0.5em 0.5em 0.5em 0.5em ;
-}
+    font-family: "Roboto condensed", sans-serif;
+    
+    flex: 0 1 auto;
+  }
+  
+  .nowrap {
+    white-space: nowrap;
+  }
+  
 
-.footer-contact-links > a:hover {
-    color: #ee9228;
-}
 
 
 /*Footer end*/
@@ -398,30 +408,6 @@ footer > div > div {
 }
 
     
-
-footer > div {
-display: flex;
-flex-direction: column;
-}
-
-footer > div > div {
-    width: 100%;
-}
-
-
-footer > div > div > p {
-    width: 50%;
-}
-
-footer > a {
-    text-align: center;
-    justify-content: center;
-    padding-top: 0.5em;
-}
-
-footer > div {
-    padding: 0.5em;
-}
 
 .landingpage-container > h1 {
     padding: 1em;
@@ -518,9 +504,6 @@ footer > div {
     }
 
 
-    footer > div > div > p {
-        width: 100%;
-    }
 
 }
 
