@@ -130,7 +130,6 @@ li {
   height: 15em;
   object-fit: cover;
   border: #22161c 5px solid;
-  
 }
 
 .landingpage-container > h1 {
@@ -168,28 +167,45 @@ li {
   flex-flow: row nowrap;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
 
 .fa-facebook {
-  background: #3b5998;
+  background: #4a3f3f;
   color: white;
+}
+
+.fa-facebook:hover {
+  transition: 0.1s ease-in;
+  background: #3b5998;
 }
 
 .fa-twitter {
-  background: #55acee;
+  background: #4a3f3f;
   color: white;
+}
+
+.fa-twitter:hover {
+  background: #55acee;
+  transition: 0.1s ease-in;
 }
 
 .fa-google {
-  background: #dd4b39;
+  background: #4a3f3f;
   color: white;
 }
 
+.fa-google:hover {
+  background: #dd4b39;
+  transition: 0.1s ease-in;
+}
+
 .fa-linkedin {
-  background: #007bb5;
+  background: #4a3f3f;
   color: white;
+}
+
+.fa-linkedin:hover {
+  background: #007bb5;
+  transition: 0.1s ease-in;
 }
 
 /** projects */
@@ -201,16 +217,21 @@ li {
   }
 }
 
-.projects-container > div {
+.projects-container{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 .project {
-  display: flex;
-  flex-flow: row nowrap;
   padding: 1em;
-  position: relative;
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.project-figure {
+  display: flex;
+  align-items: center;
 }
 
 .project img {
@@ -230,16 +251,14 @@ li {
 }
 
 .project p {
-  position: absolute;
-  top: 40%;
-  left: 0%;
+  margin-left: -100%;
   padding: 2%;
   border-radius: 0px 10px 10px 0px;
   font-weight: 600;
   color: #22161c;
   font-size: 12pt;
   background-color: whitesmoke;
-  margin-left: 1em;
+  position: relative; /* voorkom opacity change bug?? */
   transition: all 0.6s ease-out;
 }
 
@@ -366,9 +385,7 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-  .projects-container > div {
-    flex-flow: column;
-  }
+
   .fa {
     margin: 0.7em;
   }
