@@ -85,6 +85,8 @@ li {
   font-weight: 500;
   color: #4a3f3f;
 }
+
+
 .hamburger {
   display: none;
 }
@@ -139,7 +141,7 @@ li {
   padding-right: 30%;
   margin: auto;
   font-size: 15pt;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   color: #4a3f3f;
   font-family: "Roboto regular", sans-serif;
@@ -168,33 +170,33 @@ li {
 }
 
 
-.fa-facebook {
-  background: #4a3f3f;
-  color: white;
-}
-
-.fa-facebook:hover {
-  transition: 0.1s ease-in;
-  background: #3b5998;
-}
-
-.fa-twitter {
-  background: #4a3f3f;
-  color: white;
-}
-
-.fa-twitter:hover {
-  background: #55acee;
-  transition: 0.1s ease-in;
-}
-
 .fa-google {
   background: #4a3f3f;
   color: white;
 }
 
 .fa-google:hover {
-  background: #dd4b39;
+  transition: 0.1s ease-in;
+  background:  #dd4b39;
+}
+
+.fa-instagram {
+  background: #4a3f3f;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: #55acee;
+  transition: 0.1s ease-in;
+}
+
+.fa-pinterest {
+  background: #4a3f3f;
+  color: white;
+}
+
+.fa-pinterest:hover {
+  background: #cb2027;
   transition: 0.1s ease-in;
 }
 
@@ -209,6 +211,12 @@ li {
 }
 
 /** projects */
+
+h1 {
+  text-align: center;
+  padding: 1em;
+  color: #4a3f3f;
+}
 
 @media only screen and (min-width: 1024px) {
   .projects-container {
@@ -235,10 +243,9 @@ li {
 }
 
 .project img {
-  border-radius: 15px;
+  border-radius: 3px;
   width: 100%;
   height: auto;
-
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -253,7 +260,7 @@ li {
 .project p {
   margin-left: -100%;
   padding: 2%;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 3px 3px 0px;
   font-weight: 600;
   color: #22161c;
   font-size: 12pt;
@@ -352,7 +359,7 @@ footer {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 3px;
     text-align: center;
     transition: 0.4s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
