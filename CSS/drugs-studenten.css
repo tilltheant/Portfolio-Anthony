@@ -401,11 +401,9 @@ footer {
   }
 
   .title-box h1 {
-    font-size: 30pt;
+    font-size: 20pt;
   }
-  .title-box p {
-    font-size: 15pt;
-  }
+
 
   .icon-wrapper {
     padding: 0;
