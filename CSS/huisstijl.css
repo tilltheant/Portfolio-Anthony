@@ -152,11 +152,11 @@ li {
   padding-left: 30%;
   padding-right: 30%;
   margin: auto;
-  font-size: 15pt;
+  font-size: 1em;
   font-weight: normal;
   text-align: center;
   color: #4a3f3f;
-  font-family: "Roboto regular", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .landingpage-container > h1 > a {
