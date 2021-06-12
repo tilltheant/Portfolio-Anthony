@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
 
 * {
   margin: 0;
@@ -30,6 +31,10 @@ main {
 /*BEGIN NAVIGATOR   */
 html {
   font-size: 14px;
+}
+
+main {
+  padding-bottom: 1em;
 }
 
 @media (min-width: 769px){
@@ -100,7 +105,7 @@ li {
 .nav-link {
   font-size: 1rem;
   font-weight: 600;
-  color: black;
+  color: #4a3f3f;
 }
 
 .nav-link:hover {
@@ -126,7 +131,7 @@ li {
   height: 700px;
   top: 5%;
   left: 0%;
-  background: grey;
+  background: #4a3f3f;
   border-radius: 50%;
   z-index: -1;
   opacity: 0.3;
@@ -186,7 +191,7 @@ section {
 }
 
 .title-box {
-  color: black;
+  color: #4a3f3f;
   margin-bottom: 10%;
 }
 

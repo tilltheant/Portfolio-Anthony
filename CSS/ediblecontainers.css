@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,8 @@ header,
 main {
   animation: drop 1.5s ease;
 }
+
+
 
 @keyframes drop {
   0% {
@@ -30,40 +33,36 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
   html {
     font-size: 16px;
   } 
 }
 
 body {
-  background-color: #4a3f3f;
+  background-image:  url("../Images/imagegallery/image\ gallery\ \(28\).jpg");
+  background-repeat: no-repeat;
 }
 
 .acta-24px {
-    font-family: acta-poster, serif;
-    font-style: italic;
-    line-height: 65.2956771850586px;
+  font-family: acta-poster, serif;
+  font-style: italic;
+  line-height: 65.2956771850586px;
 }
 
-.lato-22px {
+.lato-16px {
   font-family: Lato, sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 29.591999053955078px;
-  text-transform: none;
-  color: #333333;
+font-size: 16px;
+line-height: 24.799999237060547px;
+color: #333333;
+font-style: italic;
   }
 
-  .lato-16px {
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  line-height: 24.799999237060547px;
-  color: #333333;
-  font-style: italic;
-    }
+figure {
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
 
 li {
   list-style: none;
@@ -91,7 +90,7 @@ li {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #4a3f3f;
 }
 
 .nav-menu {
@@ -107,7 +106,7 @@ li {
 .nav-link {
   font-size: 1rem;
   font-weight: 600;
-  color: #cdcdcd;
+  color: white;
 }
 
 .nav-link:hover {
@@ -136,7 +135,7 @@ li {
   background: #f4f4f4;
   border-radius: 50%;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 section {
@@ -154,34 +153,14 @@ section {
 }
 
 .title-box {
-  color: #cdcdcd;
+  color: #4a3f3f;
+  margin-bottom: 10%;
 }
 
 h1 {
   font-size: 4em;
 }
 
-.icon-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 3em;
-  justify-content: center;
-}
-
-.icon-wrapper div {
-  width: 50%;
-  height: auto;
-}
-
-.icon-wrapper img {
-  width: 50%;
-  height: auto;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .project-wrapper {
   padding: 1.5em;
@@ -192,7 +171,8 @@ h1 {
   font-family: "Roboto Regular", sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 769px) {
   .project-wrapper {
     padding: 2em 3em;
   }
@@ -202,7 +182,7 @@ h1 {
 
 
 .landing-page-content {
-  border-bottom: solid black 3px;
+  border-bottom: solid #4a3f3f 3px;
   padding: 3em;
   padding-left: 0;
   padding-top: 0;
@@ -210,11 +190,8 @@ h1 {
 }
 
 
-
-
-.project-wrapper img {
-  border-radius: 3px;
-  width: 100%;
+video {
+  margin-top: 1em;
 }
 
 .content p {
@@ -222,7 +199,110 @@ h1 {
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+
+.content img {
+    width: 100%;
+  }
+
+
+
+/*   GALLERY */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    background-color:#4a3f3f ;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: #8a7d7d;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #4a3f3f;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /* END GALLERY */
+
+iframe {
+    width: 300px;
+}
+
+@media only screen and (min-width: 769px) {
   .content p {
     columns: 2
   }
@@ -234,27 +314,7 @@ h1 {
   padding-top: 1em;
 }
 
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 5%;
-}
 
-button {
-  padding: 15px;
-  border-radius: 5px;
-  display: inline-block;
-  border: none;
-  transition: all 0.2s ease 0s;
-  font-weight: 600;
-  color: #cdcdcd;
-  background-color: #4a3f3f;
-}
-
-button:hover {
-  color: #4a3f3f;
-  background-color: #cdcdcd;
-}
 
 /*main */
 
@@ -321,10 +381,8 @@ footer {
 
 .copyright {
   padding: 1em;
-
   color: ivory;
   text-align: center;
-
   font-weight: 300;
   font-family: "Roboto condensed", sans-serif;
 
@@ -339,7 +397,7 @@ footer {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .background-circle {
     width: 500px;
     height: 500px;
@@ -348,10 +406,6 @@ footer {
   section {
     margin-left: 5%;
     margin-right: 5%;
-  }
-
-  .landingpage-container > h1 {
-    padding: 1em;
   }
 
   .nav-menu {
@@ -402,17 +456,40 @@ footer {
   }
 
   .title-box h1 {
-    font-size: 20pt;
+    font-size: 30pt;
   }
-
-
-  .icon-wrapper {
-    padding: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+  .title-box p {
+    font-size: 15pt;
   }
 
   .project-wrapper h1 {
     font-size: 20pt;
   }
+}
+
+.u-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.u-flex-50 {
+  flex-basis: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 426px) {
+  .u-flex-50 {
+    flex-basis: 50%;
+  }
+ }
+
+ .u-mt-1 {
+   margin-top : 10px;
+ }
+
+.u-mt-2 {
+  margin-top: 20px;
 }
