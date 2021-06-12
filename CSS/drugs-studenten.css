@@ -208,16 +208,6 @@ h1 {
   padding-bottom: 1em;
 }
 
-.project-wrapper h1 {
-  font-weight: 600;
-  font-size: 3em;
-  padding-bottom: 2%;
-}
-
-.project-wrapper h2 {
-  font-weight: 300;
-  font-size: 2em;
-}
 
 
 
@@ -357,17 +347,6 @@ footer {
   section {
     margin-left: 5%;
     margin-right: 5%;
-  }
-
-  .project-wrapper h1 {
-    font-weight: 600;
-    font-size: 20pt;
-  }
-
-  .project-wrapper h2 {
-    font-size: 3em;
-    font-weight: 300;
-    font-size: 20pt;
   }
 
   .landingpage-container > h1 {
