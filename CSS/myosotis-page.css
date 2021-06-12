@@ -392,10 +392,8 @@ footer {
 
 .copyright {
   padding: 1em;
-
   color: ivory;
   text-align: center;
-
   font-weight: 300;
   font-family: "Roboto condensed", sans-serif;
 
@@ -423,7 +421,7 @@ footer {
 
   .project-wrapper h1 {
     font-weight: 600;
-    font-size: 30pt;
+    font-size: 20pt;
   }
 
   .project-wrapper h2 {
