@@ -40,6 +40,30 @@ body {
   background-color: #4a3f3f;
 }
 
+.acta-24px {
+    font-family: acta-poster, serif;
+    font-style: italic;
+    line-height: 65.2956771850586px;
+}
+
+.lato-22px {
+  font-family: Lato, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 29.591999053955078px;
+  text-transform: none;
+  color: #333333;
+  }
+
+  .lato-16px {
+    font-family: Lato, sans-serif;
+  font-size: 16px;
+  line-height: 24.799999237060547px;
+  color: #333333;
+    }
+
 li {
   list-style: none;
 }
@@ -398,7 +422,7 @@ footer {
   }
 
   .title-box h1 {
-    font-size: 20pt;
+    font-size: 30pt;
   }
   .title-box p {
     font-size: 15pt;

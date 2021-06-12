@@ -26,9 +26,21 @@ main {
 }
 
 /*BEGIN NAVIGATOR   */
-body {
-  background-color: whitesmoke;
+
+
+.acta-24px {
+  font-family: acta-poster, serif;
+  font-size: 61px;
+  font-style: italic;
+  line-height: 65.2956771850586px;
 }
+
+.lato-16px {
+  font-family: Lato, sans-serif;
+font-size: 16px;
+line-height: 24.799999237060547px;
+color: #333333;
+  }
 
 li {
   list-style: none;
@@ -85,7 +97,6 @@ li {
   font-weight: 500;
   color: #4a3f3f;
 }
-
 
 .hamburger {
   display: none;
@@ -169,7 +180,6 @@ li {
   flex-flow: row nowrap;
 }
 
-
 .fa-google {
   background: #4a3f3f;
   color: white;
@@ -177,7 +187,7 @@ li {
 
 .fa-google:hover {
   transition: 0.1s ease-in;
-  background:  #dd4b39;
+  background: #dd4b39;
 }
 
 .fa-instagram {
@@ -225,10 +235,9 @@ h1 {
   }
 }
 
-.projects-container{
+.projects-container {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .project {
@@ -250,8 +259,7 @@ h1 {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-
-.project a:hover img{
+.project a:hover img {
   opacity: 0.5;
   transition: all 0.2s ease-out;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -279,13 +287,12 @@ footer {
 }
 
 .footer-item {
-   flex: 1 0 300px;
-   flex-direction: column;
-   
+  flex: 1 0 300px;
+  flex-direction: column;
+
   border-left: solid 3px white;
   margin: 1em;
   padding: 1em;
-  
 }
 
 .footer-item-links {
@@ -315,12 +322,12 @@ footer {
 }
 
 .footer-logo {
-  flex: 1 0 100%; 
+  flex: 1 0 100%;
   border: none;
   color: white;
   display: flex;
   justify-content: center;
-  
+
   padding: 2em 0 0 0;
 }
 
@@ -337,7 +344,7 @@ footer {
 
   font-weight: 300;
   font-family: "Roboto condensed", sans-serif;
-  
+
   flex: 0 1 auto;
 }
 
@@ -345,9 +352,7 @@ footer {
   white-space: nowrap;
 }
 
-
 @media only screen and (max-width: 768px) {
-  
   .landingpage-container > h1 {
     padding: 1em;
   }
@@ -392,7 +397,6 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
-
   .fa {
     margin: 0.7em;
   }

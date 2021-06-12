@@ -46,6 +46,19 @@ body {
   background-position: center;
 }
 
+.acta-24px {
+  font-family: acta-poster, serif;
+  font-style: italic;
+  line-height: 65.2956771850586px;
+}
+
+.lato-16px {
+  font-family: Lato, sans-serif;
+font-size: 16px;
+line-height: 24.799999237060547px;
+color: #333333;
+  }
+
 figure {
   margin-bottom: 20px;
   font-weight: bold;
@@ -471,7 +484,7 @@ footer {
   }
 
   .title-box h1 {
-    font-size: 20pt;
+    font-size: 30pt;
   }
   .title-box p {
     font-size: 15pt;
